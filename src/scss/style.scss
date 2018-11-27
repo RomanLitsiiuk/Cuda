@@ -2,6 +2,7 @@
 // SCSS MIXINS
 //----------------------------------*/
 
+@import "_reset.scss";
 @import 'mixins/_position.scss';
 
 //----------------------------------*\
@@ -12,7 +13,7 @@
 @import 'modules/_vars.scss';
 @import 'modules/_clearfix.scss';
 @import 'modules/_defaults.scss';
-@import 'modules/_normalize.scss';
+//@import 'modules/_normalize.scss';
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
@@ -23,6 +24,8 @@
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
 @import 'partials/_main-heading.scss';
+@import 'partials/_services.scss';
+@import 'partials/_card.scss';
 
 //----------------------------------*\
 // OBJECTS & MODULES

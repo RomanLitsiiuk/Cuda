@@ -1,0 +1,17 @@
+.services {
+  padding: 120px 0;
+  background-color: $services-background;
+  font-family: 'Titillium Web';
+  color: $white;
+  @extend .clear;
+
+  &__container {
+    @extend .container;
+  }
+  
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6em;
+  }
+}

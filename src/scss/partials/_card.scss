@@ -1,0 +1,53 @@
+.card {
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  
+  &__image-wrap {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  &__image {
+    overflow: hidden;
+    background-image: url('../img/sprite.png');
+    height: 134px;
+    display: inline-block;
+    
+    &--flag {
+      background-position: 0 0;
+      width: 132px;
+    }
+  
+    &--crayon {
+      background-position: -150px 0;
+      width: 94px;
+    }
+  
+    &--gears {
+      background-position: 322px 0;
+      width: 174px;
+    }
+  
+    &--rocket {
+      background-position: 95px 0;
+      width: 95px;
+    }
+  }
+  
+  &__heading {
+    font-family: "Titillium Web Bold";
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  &__text {
+    text-align: center;
+    font-family: "Titillium Web Light";
+    font-size: 16px;
+    padding: 0 44px 40px;
+    line-height: 1.5em;
+  }
+}
