@@ -21,6 +21,7 @@
       background-color: rgba(0,0,0, .1);
     }
   }
+  
   &--team {
     color: $dark;
     text-transform: uppercase;
@@ -38,5 +39,9 @@
       width: 88px;
       background-color: rgba(0,0,0, .1);
     }
+  }
+  
+  &--skills {
+    @extend .main-heading--team;
   }
 }

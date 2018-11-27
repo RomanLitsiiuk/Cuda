@@ -1,0 +1,16 @@
+.skills {
+  padding: 120px 0;
+  color: $dark;
+  @extend .clear;
+  
+  &__container {
+    @extend .container;
+  }
+  
+  &__text {
+    font-family: "Titillium Web";
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+  }
+}

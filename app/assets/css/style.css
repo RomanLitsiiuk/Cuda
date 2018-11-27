@@ -41,13 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after {
+.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after {
   content: ' ';
   display: table; }
 
-.clear, .header__row, .services, .team, .links, .links__content {
+.clear, .header__row, .services, .team, .links, .links__content, .skills {
   *zoom: 1; }
-  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after {
+  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after {
     clear: both; }
 
 /** {
@@ -107,7 +107,7 @@ body,html{
     color: #f7f3ea;
     text-transform: uppercase; }
 
-.container, .header__container, .services__container, .team__container {
+.container, .header__container, .services__container, .team__container, .skills__container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px; }
@@ -131,13 +131,13 @@ body,html{
       height: 4px;
       width: 88px;
       background-color: rgba(0, 0, 0, 0.1); }
-  .main-heading--team {
+  .main-heading--team, .main-heading--skills {
     color: #3c4761;
     text-transform: uppercase;
     font-size: 40px;
     padding-bottom: 50px;
     position: relative; }
-    .main-heading--team::after {
+    .main-heading--team::after, .main-heading--skills::after {
       content: '';
       position: absolute;
       display: block;
@@ -233,7 +233,7 @@ body,html{
   .user-card__description {
     font-family: 'Titillium Web Light';
     font-size: 16px;
-    padding: 0 44px;
+    padding: 0 40px;
     line-height: 1.5em; }
 
 .links {
@@ -243,7 +243,7 @@ body,html{
   font-size: 18px; }
   .links__content {
     display: inline-block;
-    padding: 33px 0; }
+    padding-top: 33px; }
   .links__link-wrap {
     float: left;
     background-color: #bdd1df;
@@ -256,6 +256,18 @@ body,html{
       cursor: pointer;
       box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
       color: #48c1e9; }
+
+.skills {
+  padding: 120px 0;
+  color: #3c4761; }
+  .skills__text {
+    font-family: "Titillium Web";
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em; }
+
+.loader {
+  position: relative; }
 
 .button {
   text-transform: uppercase;
