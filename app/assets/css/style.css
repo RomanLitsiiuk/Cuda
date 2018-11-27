@@ -41,13 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after {
+.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after {
   content: ' ';
   display: table; }
 
-.clear, .header__row, .services, .team, .links, .links__content, .skills {
+.clear, .header__row, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap {
   *zoom: 1; }
-  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after {
+  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after {
     clear: both; }
 
 /** {
@@ -107,7 +107,7 @@ body,html{
     color: #f7f3ea;
     text-transform: uppercase; }
 
-.container, .header__container, .services__container, .team__container, .skills__container {
+.container, .header__container, .services__container, .team__container, .skills__container, .portfolio__container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px; }
@@ -131,13 +131,13 @@ body,html{
       height: 4px;
       width: 88px;
       background-color: rgba(0, 0, 0, 0.1); }
-  .main-heading--team, .main-heading--skills {
+  .main-heading--team, .main-heading--skills, .main-heading--portfolio {
     color: #3c4761;
     text-transform: uppercase;
     font-size: 40px;
     padding-bottom: 50px;
     position: relative; }
-    .main-heading--team::after, .main-heading--skills::after {
+    .main-heading--team::after, .main-heading--skills::after, .main-heading--portfolio::after {
       content: '';
       position: absolute;
       display: block;
@@ -269,6 +269,43 @@ body,html{
 .loader {
   position: relative; }
 
+.portfolio {
+  background-color: #ffdd99;
+  padding: 120px 0;
+  color: #3c4761; }
+  .portfolio__text {
+    font-family: "Titillium Web";
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+    padding-bottom: 40px; }
+  .portfolio__buttons-wrap {
+    text-align: center; }
+  .portfolio__button {
+    font-family: "Titillium Web";
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color: #3c4761;
+    padding: 5px 10px; }
+    .portfolio__button:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px; }
+  .portfolio__products-wrap {
+    padding: 20px 0; }
+  .portfolio__button-wrap {
+    text-align: center;
+    padding-top: 20px; }
+
+.product-card {
+  max-width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px; }
+  .product-card__image {
+    max-width: 100%; }
+
 .button {
   text-transform: uppercase;
   border: none;
@@ -287,6 +324,13 @@ body,html{
       background: linear-gradient(to top, #d25217 0%, #d25217 4%, #eb7d4b 4%, #eb7d4b 100%); }
     .button--main:active {
       background: #eb7d4b;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset; }
+  .button--portfolio {
+    background: linear-gradient(to top, #0f7e6a 0%, #0f7e6a 8%, #17c2a4 8%, #17c2a4 100%); }
+    .button--portfolio:hover {
+      background: linear-gradient(to top, #0f7e6a 0%, #0f7e6a 4%, #17c2a4 4%, #17c2a4 100%); }
+    .button--portfolio:active {
+      background: #17c2a4;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset; }
 
 @font-face {

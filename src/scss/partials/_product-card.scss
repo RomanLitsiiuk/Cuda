@@ -1,0 +1,10 @@
+.product-card {
+  max-width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+  
+  &__image {
+    max-width: 100%;
+  }
+}

@@ -26,4 +26,17 @@
       
     }
   }
+  
+  &--portfolio {
+    background: linear-gradient(to top, darken($services-background, 15%) 0%, darken($services-background, 15%) 8%, $services-background 8%, $services-background 100%);
+  
+    &:hover {
+      background: linear-gradient(to top, darken($services-background, 15%) 0%, darken($services-background, 15%) 4%, $services-background 4%, $services-background 100%);
+    }
+  
+    &:active {
+      background: $services-background;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .3) inset;
+    }
+  }
 }
