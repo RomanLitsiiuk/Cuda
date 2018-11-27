@@ -21,4 +21,22 @@
       background-color: rgba(0,0,0, .1);
     }
   }
+  &--team {
+    color: $dark;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 50px;
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: 25px;
+      left: calc(50% - 44px);
+      height: 4px;
+      width: 88px;
+      background-color: rgba(0,0,0, .1);
+    }
+  }
 }

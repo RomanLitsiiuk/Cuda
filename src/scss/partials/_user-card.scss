@@ -1,0 +1,41 @@
+.user-card {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  color: $dark;
+  text-align: center;
+  
+  &__photo-wrap {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  &__photo {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: $photo;
+  }
+  
+  &__name {
+    font-family: 'Titillium Web Bold';
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+  
+  &__position {
+    font-family: 'Titillium Web';
+    color: $link;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  
+  &__description {
+    font-family: 'Titillium Web Light';
+    font-size: 16px;
+    padding: 0 44px;
+    line-height: 1.5em;
+  }
+}

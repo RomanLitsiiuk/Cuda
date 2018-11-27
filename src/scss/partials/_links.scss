@@ -1,0 +1,29 @@
+.links {
+  color: $white;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  @extend .clear;
+  
+  &__content {
+    @extend .clear;
+    display: inline-block;
+    padding: 33px 0;
+  }
+  
+  &__link-wrap {
+    float: left;
+    background-color: $linkBackground;
+    margin: 0 5px;
+    padding: 8px 0;
+    width: 34px;
+    border-radius: 17px;
+    text-align: center;
+    
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 255, .3);
+      color: $link;
+    }
+  }
+}
