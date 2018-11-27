@@ -1,30 +1,30 @@
-.clear:before, .clear:after {
+.clear:before, .header__row:before, .clear:after, .header__row:after {
   content: ' ';
   display: table; }
 
-.clear {
+.clear, .header__row {
   *zoom: 1; }
-  .clear:after {
+  .clear:after, .header__row:after {
     clear: both; }
 
-* {
+/** {
   box-sizing: border-box;
   font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
+  text-rendering: optimizeLegibility;
+}
 html {
   font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
-
+  background: radial-gradient(ellipse at center, $base 0, $darken 80%, $back 100%);
+}
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
-  transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
-
+  transition: all .4s .3s ease-in;
+}
+body,html{
+	min-height: 100vh;
+	overflow: hidden;
+}*/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -391,19 +391,84 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+.header {
+  background-color: #87509c;
+  min-height: 595px; }
+  .header__row {
+    padding-top: 58px; }
+  .header__content {
+    padding: 145px 0; }
+  .header__button-wrap {
+    padding-top: 50px;
+    text-align: center; }
 
-.nav ul {
-  list-style: none; }
+.logo {
+  width: 120px;
+  height: 36px;
+  padding-left: 40px;
+  float: left; }
+
+.nav {
+  float: right;
+  font-family: 'Titillium Web';
+  font-size: 16px;
+  padding: 0; }
+  .nav__container {
+    margin: 0; }
+  .nav__button {
+    padding: 8px 17px;
+    list-style: none;
+    float: right;
+    transition: .2s; }
+    .nav__button:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      transition: .2s; }
+  .nav__link {
+    text-decoration: none;
+    color: #f7f3ea;
+    text-transform: uppercase; }
+
+.container, .header__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.main-heading {
+  color: #f7f3ea;
+  text-align: center; }
+
+.button {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  color: #f7f3ea;
+  font-family: "Titillium Web";
+  font-size: 18px;
+  padding: 24px 80px;
+  margin: 0 auto;
+  outline: none; }
+  .button:hover {
+    cursor: pointer; }
+  .button--main {
+    background: linear-gradient(to top, #d25217 0%, #d25217 8%, #eb7d4b 8%, #eb7d4b 100%); }
+    .button--main:hover {
+      background: linear-gradient(to top, #d25217 0%, #d25217 4%, #eb7d4b 4%, #eb7d4b 100%); }
+    .button--main:active {
+      background: #eb7d4b;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset; }
 
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
   src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
   font-weight: normal;
   font-style: normal; }
 

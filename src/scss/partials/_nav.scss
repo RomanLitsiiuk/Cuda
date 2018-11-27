@@ -1,10 +1,30 @@
 .nav {
-  ul {
+  float: right;
+  font-family: 'Titillium Web';
+  font-size: 16px;
+  padding: 0;
+  
+  &__container {
+    margin: 0;
+  }
+  
+  &__button {
+    padding: 8px 17px;
     list-style: none;
-    li {
-      a {
-
-      }
+    float: right;
+    transition: .2s;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0,0,0, .3);
+      border-radius: 5px;
+      transition: .2s;
     }
+  }
+  
+  &__link {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
   }
 }

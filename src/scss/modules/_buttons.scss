@@ -1,0 +1,29 @@
+.button {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  font-family: "Titillium Web";
+  font-size: 18px;
+  padding: 24px 80px;
+  margin: 0 auto;
+  outline: none;
+  
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &--main {
+    background: linear-gradient(to top, darken($main-button, 15%) 0%, darken($main-button, 15%) 8%, $main-button 8%, $main-button 100%);
+    
+    &:hover {
+      background: linear-gradient(to top, darken($main-button, 15%) 0%, darken($main-button, 15%) 4%, $main-button 4%, $main-button 100%);
+    }
+    
+    &:active {
+      background: $main-button;
+      box-shadow: 0 0 10px rgba(0,0,0, .3) inset;
+      
+    }
+  }
+}

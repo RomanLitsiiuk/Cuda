@@ -1,10 +1,29 @@
 .header {
-
-}
-.logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
-
+  background-color: $purple;
+  min-height: 595px;
+  
+  &__container {
+    @extend .container;
   }
+  
+  &__row {
+    padding-top: 58px;
+    @extend .clear;
+  }
+  
+  &__content {
+    padding: 145px 0;
+  }
+  
+  &__button-wrap {
+    padding-top: 50px;
+    text-align: center;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: 36px;
+  padding-left: 40px;
+  float: left;
 }
