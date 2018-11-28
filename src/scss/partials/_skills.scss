@@ -13,4 +13,8 @@
     text-align: center;
     line-height: 1.5em;
   }
+  
+  &__cards-wrap {
+    @extend .clear;
+  }
 }
