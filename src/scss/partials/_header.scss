@@ -1,6 +1,7 @@
 .header {
   background-color: $purple;
-  height: 595px;
+  min-height: 595px;
+  
   
   &__container {
     @extend .container;

@@ -70,7 +70,7 @@ body,html{
 }*/
 .header {
   background-color: #87509c;
-  height: 595px; }
+  min-height: 595px; }
   .header__row {
     padding-top: 58px; }
   .header__content {
@@ -96,16 +96,81 @@ body,html{
     padding: 8px 17px;
     list-style: none;
     float: right;
+    border-radius: 5px;
     transition: .2s; }
     .nav__button:hover {
       cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 5px;
+      background-color: #4d2d59;
       transition: .2s; }
+    .nav__button:active {
+      background-color: #a06cb3; }
   .nav__link {
     text-decoration: none;
     color: #f7f3ea;
     text-transform: uppercase; }
+  .nav__trigger-wrap {
+    display: none; }
+  .nav__trigger {
+    display: none; }
+
+@media all and (max-width: 768px) {
+  .nav {
+    display: none; }
+    .nav__button {
+      float: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      border-radius: 0;
+      background-color: #6a3f7a;
+      width: 200px;
+      text-align: center;
+      padding: 10px 0; }
+  .nav__trigger-label {
+    display: block;
+    width: 50px;
+    height: 40px;
+    background-color: #6a3f7a;
+    float: right;
+    border-radius: 5px;
+    position: relative; }
+    .nav__trigger-label:hover {
+      cursor: pointer;
+      background-color: #b58dc5; }
+    .nav__trigger-label::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: #f7f3ea;
+      width: 80%;
+      height: 15%;
+      top: 10px;
+      left: 10%;
+      border-radius: 4px; }
+    .nav__trigger-label::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: #f7f3ea;
+      width: 80%;
+      height: 15%;
+      bottom: 10px;
+      left: 10%;
+      border-radius: 4px; }
+  .nav__trigger:checked + .nav {
+    display: block;
+    position: absolute;
+    right: 100px;
+    z-index: 2; } }
+
+@media all and (max-width: 480px) {
+  /*.logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }*/ }
 
 .container, .header__container, .footer__container, .services__container, .team__container, .skills__container, .portfolio__container, .testimonials__container, .get-in-touch__container {
   max-width: 1140px;
