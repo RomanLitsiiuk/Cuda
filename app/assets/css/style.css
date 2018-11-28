@@ -41,13 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .testimonials:before, .get-in-touch:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after, .get-in-touch:after {
+.clear:before, .header__row:before, .footer__list:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .testimonials:before, .get-in-touch:before, .clear:after, .header__row:after, .footer__list:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after, .get-in-touch:after {
   content: ' ';
   display: table; }
 
-.clear, .header__row, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap, .testimonials, .get-in-touch {
+.clear, .header__row, .footer__list, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap, .testimonials, .get-in-touch {
   *zoom: 1; }
-  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after, .get-in-touch:after {
+  .clear:after, .header__row:after, .footer__list:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after, .get-in-touch:after {
     clear: both; }
 
 /** {
@@ -114,7 +114,27 @@ body,html{
 
 .footer {
   border-top: 1px solid #ccc;
-  background-color: #344b8e; }
+  background-color: #344b8e;
+  padding: 30px; }
+  .footer__container {
+    text-align: center; }
+  .footer__list {
+    display: inline-block; }
+  .footer__link-wrap {
+    float: left;
+    padding: 15px 25px;
+    margin-right: 10px; }
+    .footer__link-wrap:hover {
+      cursor: pointer; }
+      .footer__link-wrap:hover > .footer__link {
+        color: #48c1e9; }
+    .footer__link-wrap:active {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset; }
+  .footer__link {
+    font-family: 'Titillium Web SemiBold';
+    font-size: 24px;
+    text-decoration: none;
+    color: #f7f3ea; }
 
 .main-heading {
   font-family: "Titillium Web Bold";
@@ -476,6 +496,12 @@ body,html{
 @font-face {
   font-family: 'Titillium Web Italic';
   src: url("../fonts/Titillium_Web/TitilliumWeb-Italic.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Titillium Web SemiBold';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf");
   font-weight: normal;
   font-style: normal; }
 
