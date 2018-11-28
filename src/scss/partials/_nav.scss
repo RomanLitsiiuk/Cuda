@@ -41,7 +41,7 @@
   }
   
   &__trigger-icon {
-    color: $white;
+    color: transparent;
     font-size: 26px;
     padding: 8px 16px;
   }
@@ -60,17 +60,21 @@
       text-align: center;
       padding: 10px 0;
     }
-  }
   
-  .nav__trigger-label {
-    display: block;
-    background-color: darken($purple, 10%);
-    float: right;
-    border-radius: 5px;
+    &__trigger-label {
+      display: block;
+      background-color: darken($purple, 10%);
+      float: right;
+      border-radius: 5px;
+  
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($purple, 20%);
+      }
+    }
     
-    &:hover {
-      cursor: pointer;
-      background-color: lighten($purple, 20%);
+    &__trigger-icon {
+      color: $white;
     }
   }
   

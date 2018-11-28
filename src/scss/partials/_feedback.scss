@@ -47,12 +47,20 @@
 
 @media all and (max-width: 1120px) {
   .feedback {
+    box-sizing: border-box;
+    
+    &:nth-child(even) {
+      float: right;
+    }
+    
     &__photo-wrap {
-      width: 24%;
+      width: 25%;
+      box-sizing: border-box;
     }
   
     &__text-wrap {
-      width: 55%;
+      width: 60%;
+      box-sizing: border-box;
     }
   }
 }
@@ -67,7 +75,7 @@
     &__text-wrap {
       width: 100%;
       text-align: center;
-      padding-right: 0;
+      padding: 0 25px;
     }
     
     &__photo {
@@ -76,7 +84,7 @@
   }
 }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 768px) {
   .feedback {
     width: 100%;
   }
