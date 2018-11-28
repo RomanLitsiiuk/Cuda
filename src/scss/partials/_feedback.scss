@@ -44,3 +44,40 @@
     font-size: 18px;
   }
 }
+
+@media all and (max-width: 1120px) {
+  .feedback {
+    &__photo-wrap {
+      width: 24%;
+    }
+  
+    &__text-wrap {
+      width: 55%;
+    }
+  }
+}
+
+@media all and (max-width: 840px) {
+  .feedback {
+    &__photo-wrap {
+      width: 100%;
+      text-align: center;
+    }
+    
+    &__text-wrap {
+      width: 100%;
+      text-align: center;
+      padding-right: 0;
+    }
+    
+    &__photo {
+      display: inline-block;
+    }
+  }
+}
+
+@media all and (max-width: 660px) {
+  .feedback {
+    width: 100%;
+  }
+}

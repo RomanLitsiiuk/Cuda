@@ -43,3 +43,11 @@
     margin-bottom: 50px;
   }
 }
+
+@media all and (max-width: 640px) {
+  .form {
+    &__input-wrap {
+      width: 100%;
+    }
+  }
+}

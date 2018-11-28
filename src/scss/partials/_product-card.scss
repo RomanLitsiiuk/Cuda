@@ -1,8 +1,9 @@
 .product-card {
-  max-width: 50%;
+  width: 50%;
   float: left;
   box-sizing: border-box;
   padding: 20px;
+  text-align: center;
   
   &__image {
     max-width: 100%;
@@ -25,5 +26,11 @@
       color: $link;
       text-decoration: underline;
     }
+  }
+}
+
+@media all and (max-width: 840px) {
+  .product-card {
+    width: 100%;
   }
 }

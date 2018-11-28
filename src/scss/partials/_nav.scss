@@ -39,6 +39,12 @@
   &__trigger {
     display: none;
   }
+  
+  &__trigger-icon {
+    color: $white;
+    font-size: 26px;
+    padding: 8px 16px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -58,40 +64,13 @@
   
   .nav__trigger-label {
     display: block;
-    width: 50px;
-    height: 40px;
     background-color: darken($purple, 10%);
     float: right;
     border-radius: 5px;
-    position: relative;
     
     &:hover {
       cursor: pointer;
       background-color: lighten($purple, 20%);
-    }
-    
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: $white;
-      width: 80%;
-      height: 15%;
-      top: 10px;
-      left: 10%;
-      border-radius: 4px;
-    }
-    
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: $white;
-      width: 80%;
-      height: 15%;
-      bottom: 10px;
-      left: 10%;
-      border-radius: 4px;
     }
   }
   
@@ -101,4 +80,4 @@
     right: 100px;
     z-index: 2;
   }
-}W
+}

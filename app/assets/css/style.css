@@ -112,6 +112,10 @@ body,html{
     display: none; }
   .nav__trigger {
     display: none; }
+  .nav__trigger-icon {
+    color: #f7f3ea;
+    font-size: 26px;
+    padding: 8px 16px; }
 
 @media all and (max-width: 768px) {
   .nav {
@@ -129,48 +133,17 @@ body,html{
       padding: 10px 0; }
   .nav__trigger-label {
     display: block;
-    width: 50px;
-    height: 40px;
     background-color: #6a3f7a;
     float: right;
-    border-radius: 5px;
-    position: relative; }
+    border-radius: 5px; }
     .nav__trigger-label:hover {
       cursor: pointer;
       background-color: #b58dc5; }
-    .nav__trigger-label::before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f7f3ea;
-      width: 80%;
-      height: 15%;
-      top: 10px;
-      left: 10%;
-      border-radius: 4px; }
-    .nav__trigger-label::after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f7f3ea;
-      width: 80%;
-      height: 15%;
-      bottom: 10px;
-      left: 10%;
-      border-radius: 4px; }
   .nav__trigger:checked + .nav {
     display: block;
     position: absolute;
     right: 100px;
     z-index: 2; } }
-
-@media all and (max-width: 480px) {
-  /*.logo {
-    float: none;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-  }*/ }
 
 .container, .header__container, .footer__container, .services__container, .team__container, .skills__container, .portfolio__container, .testimonials__container, .get-in-touch__container {
   max-width: 1140px;
@@ -285,9 +258,21 @@ body,html{
     padding: 0 44px 40px;
     line-height: 1.5em; }
 
+@media all and (max-width: 840px) {
+  .card {
+    width: 50%; }
+    .card:nth-child(even) {
+      float: right; }
+    .card__text {
+      padding: 0 0 44px 0; } }
+
+@media all and (max-width: 640px) {
+  .card {
+    width: 100%; } }
+
 .team {
   background-color: #e7f1f8;
-  padding: 120px 0; }
+  padding: 120px 0 80px; }
   .team__text {
     color: #3c4761;
     font-family: "Titillium Web";
@@ -327,11 +312,22 @@ body,html{
     padding: 0 40px;
     line-height: 1.5em; }
 
+@media all and (max-width: 960px) {
+  .user-card {
+    width: 50%; }
+    .user-card__description {
+      padding: 0 20px; } }
+
+@media all and (max-width: 640px) {
+  .user-card {
+    width: 100%; } }
+
 .links {
   color: #f7f3ea;
   text-align: center;
   width: 100%;
-  font-size: 18px; }
+  font-size: 18px;
+  padding-bottom: 40px; }
   .links__content {
     display: inline-block;
     padding-top: 33px; }
@@ -393,10 +389,11 @@ body,html{
     padding-top: 20px; }
 
 .product-card {
-  max-width: 50%;
+  width: 50%;
   float: left;
   box-sizing: border-box;
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
   .product-card__image {
     max-width: 100%;
     padding-bottom: 30px; }
@@ -412,6 +409,10 @@ body,html{
       cursor: pointer;
       color: #48c1e9;
       text-decoration: underline; }
+
+@media all and (max-width: 840px) {
+  .product-card {
+    width: 100%; } }
 
 .testimonials {
   background-color: #d74680;
@@ -459,6 +460,27 @@ body,html{
     color: #ffdd99;
     font-size: 18px; }
 
+@media all and (max-width: 1120px) {
+  .feedback__photo-wrap {
+    width: 24%; }
+  .feedback__text-wrap {
+    width: 55%; } }
+
+@media all and (max-width: 840px) {
+  .feedback__photo-wrap {
+    width: 100%;
+    text-align: center; }
+  .feedback__text-wrap {
+    width: 100%;
+    text-align: center;
+    padding-right: 0; }
+  .feedback__photo {
+    display: inline-block; } }
+
+@media all and (max-width: 660px) {
+  .feedback {
+    width: 100%; } }
+
 .get-in-touch {
   background-color: #3c5499;
   padding: 120px 0;
@@ -505,6 +527,10 @@ body,html{
   .form__message {
     min-height: 200px;
     margin-bottom: 50px; }
+
+@media all and (max-width: 640px) {
+  .form__input-wrap {
+    width: 100%; } }
 
 .button {
   text-transform: uppercase;
