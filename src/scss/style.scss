@@ -2,7 +2,7 @@
 // SCSS MIXINS
 //----------------------------------*/
 
-@import "_reset.scss";
+@import "modules/_reset.scss";
 @import 'mixins/_position.scss';
 
 //----------------------------------*\
@@ -18,15 +18,15 @@
 // PARTIALS
 //----------------------------------*/
 
-@import 'partials/_header.scss';
-@import 'partials/_nav.scss';
-@import 'partials/_sidebar.scss';
-@import 'partials/_main.scss';
-@import 'partials/_footer.scss';
-@import 'partials/_main-heading.scss';
-@import 'partials/_services.scss';
-@import 'partials/_card.scss';
-@import 'partials/_team.scss';
+@import 'partials/_header';
+@import 'partials/_nav';
+@import 'partials/_sidebar';
+@import 'partials/_main';
+@import 'partials/_footer';
+@import 'partials/_main-heading';
+@import 'partials/_services';
+@import 'partials/_card';
+@import 'partials/_team';
 @import 'partials/_user-card';
 @import 'partials/_links';
 @import 'partials/_skills';
@@ -35,6 +35,8 @@
 @import 'partials/_product-card';
 @import 'partials/_testimonials';
 @import 'partials/_feedback';
+@import 'partials/_get-in-touch';
+@import 'partials/_form';
 
 //----------------------------------*\
 // OBJECTS & MODULES

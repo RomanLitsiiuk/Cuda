@@ -1,0 +1,27 @@
+.get-in-touch {
+  background-color: $formBackground;
+  padding: 120px 0;
+  font-family: 'Titillium Web';
+  color: $white;
+  @extend .clear;
+  
+  &__container {
+    @extend .container;
+  }
+  
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+    padding-bottom: 50px;
+  }
+  
+  &__form-wrap {
+    text-align: center;
+  }
+  
+  &__button-wrap {
+    text-align: center;
+    padding-top: 20px;
+  }
+}

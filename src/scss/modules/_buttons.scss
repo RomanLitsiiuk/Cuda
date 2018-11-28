@@ -39,4 +39,17 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, .3) inset;
     }
   }
+  
+  &--get-in-touch {
+    background: linear-gradient(to top, darken($blue, 15%) 0%, darken($blue, 15%) 8%, $blue 8%, $blue 100%);
+  
+    &:hover {
+      background: linear-gradient(to top, darken($blue, 15%) 0%, darken($blue, 15%) 4%, $blue 4%, $blue 100%);
+    }
+  
+    &:active {
+      background: $blue;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .3) inset;
+    }
+  }
 }

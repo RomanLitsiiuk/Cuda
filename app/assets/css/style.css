@@ -41,13 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .testimonials:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after {
+.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .testimonials:before, .get-in-touch:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after, .get-in-touch:after {
   content: ' ';
   display: table; }
 
-.clear, .header__row, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap, .testimonials {
+.clear, .header__row, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap, .testimonials, .get-in-touch {
   *zoom: 1; }
-  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after {
+  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after, .get-in-touch:after {
     clear: both; }
 
 /** {
@@ -107,22 +107,26 @@ body,html{
     color: #f7f3ea;
     text-transform: uppercase; }
 
-.container, .header__container, .services__container, .team__container, .skills__container, .portfolio__container, .testimonials__container {
+.container, .header__container, .footer__container, .services__container, .team__container, .skills__container, .portfolio__container, .testimonials__container, .get-in-touch__container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px; }
+
+.footer {
+  border-top: 1px solid #ccc;
+  background-color: #344b8e; }
 
 .main-heading {
   font-family: "Titillium Web Bold";
   color: #f7f3ea;
   text-align: center;
   font-size: 42px; }
-  .main-heading--second-section, .main-heading--testimonials {
+  .main-heading--second-section, .main-heading--testimonials, .main-heading--get-in-touch {
     font-size: 40px;
     text-transform: uppercase;
     padding-bottom: 50px;
     position: relative; }
-    .main-heading--second-section::after, .main-heading--testimonials::after {
+    .main-heading--second-section::after, .main-heading--testimonials::after, .main-heading--get-in-touch::after {
       content: '';
       position: absolute;
       display: block;
@@ -370,6 +374,53 @@ body,html{
     color: #ffdd99;
     font-size: 18px; }
 
+.get-in-touch {
+  background-color: #3c5499;
+  padding: 120px 0;
+  font-family: 'Titillium Web';
+  color: #f7f3ea; }
+  .get-in-touch__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+    padding-bottom: 50px; }
+  .get-in-touch__form-wrap {
+    text-align: center; }
+  .get-in-touch__button-wrap {
+    text-align: center;
+    padding-top: 20px; }
+
+.form {
+  display: inline-block;
+  max-width: 860px;
+  width: 100%;
+  font-family: 'Titillium Web';
+  color: #f7f3ea;
+  padding-top: 25px; }
+  .form__input-wrap {
+    float: left;
+    width: 48%;
+    padding-bottom: 26px; }
+    .form__input-wrap:nth-child(2) {
+      float: right; }
+  .form__input, .form__message {
+    font-family: 'Titillium Web';
+    color: #f7f3ea;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 16px 26px; }
+    .form__input:-ms-input-placeholder, .form__message:-ms-input-placeholder {
+      color: #f7f3ea; }
+    .form__input::placeholder, .form__message::placeholder {
+      color: #f7f3ea; }
+  .form__message {
+    min-height: 200px;
+    margin-bottom: 50px; }
+
 .button {
   text-transform: uppercase;
   border: none;
@@ -395,6 +446,13 @@ body,html{
       background: linear-gradient(to top, #0f7e6a 0%, #0f7e6a 4%, #17c2a4 4%, #17c2a4 100%); }
     .button--portfolio:active {
       background: #17c2a4;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset; }
+  .button--get-in-touch {
+    background: linear-gradient(to top, #158eb5 0%, #158eb5 8%, #30bae7 8%, #30bae7 100%); }
+    .button--get-in-touch:hover {
+      background: linear-gradient(to top, #158eb5 0%, #158eb5 4%, #30bae7 4%, #30bae7 100%); }
+    .button--get-in-touch:active {
+      background: #30bae7;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset; }
 
 @font-face {
