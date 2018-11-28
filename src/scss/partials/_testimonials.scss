@@ -1,0 +1,21 @@
+.testimonials {
+  background-color: $testimonialsBackground;
+  padding: 120px 0 100px;
+  font-family: 'Titillium Web';
+  color: $white;
+  @extend .clear;
+  
+  &__container {
+    @extend .container;
+  }
+  
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6em;
+  }
+  
+  &__feedbacks-wrap {
+    padding-top: 40px;
+  }
+}

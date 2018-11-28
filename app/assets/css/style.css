@@ -41,13 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after {
+.clear:before, .header__row:before, .services:before, .team:before, .links:before, .links__content:before, .skills:before, .portfolio:before, .portfolio__products-wrap:before, .testimonials:before, .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after {
   content: ' ';
   display: table; }
 
-.clear, .header__row, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap {
+.clear, .header__row, .services, .team, .links, .links__content, .skills, .portfolio, .portfolio__products-wrap, .testimonials {
   *zoom: 1; }
-  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after {
+  .clear:after, .header__row:after, .services:after, .team:after, .links:after, .links__content:after, .skills:after, .portfolio:after, .portfolio__products-wrap:after, .testimonials:after {
     clear: both; }
 
 /** {
@@ -107,7 +107,7 @@ body,html{
     color: #f7f3ea;
     text-transform: uppercase; }
 
-.container, .header__container, .services__container, .team__container, .skills__container, .portfolio__container {
+.container, .header__container, .services__container, .team__container, .skills__container, .portfolio__container, .testimonials__container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px; }
@@ -117,12 +117,12 @@ body,html{
   color: #f7f3ea;
   text-align: center;
   font-size: 42px; }
-  .main-heading--second-section {
+  .main-heading--second-section, .main-heading--testimonials {
     font-size: 40px;
     text-transform: uppercase;
     padding-bottom: 50px;
     position: relative; }
-    .main-heading--second-section::after {
+    .main-heading--second-section::after, .main-heading--testimonials::after {
       content: '';
       position: absolute;
       display: block;
@@ -146,6 +146,8 @@ body,html{
       height: 4px;
       width: 88px;
       background-color: rgba(0, 0, 0, 0.1); }
+  .main-heading--portfolio {
+    color: #393939; }
 
 .services {
   padding: 120px 0;
@@ -272,7 +274,7 @@ body,html{
 .portfolio {
   background-color: #ffdd99;
   padding: 120px 0;
-  color: #3c4761; }
+  color: #393939; }
   .portfolio__text {
     font-family: "Titillium Web";
     font-size: 18px;
@@ -280,18 +282,21 @@ body,html{
     line-height: 1.5em;
     padding-bottom: 40px; }
   .portfolio__buttons-wrap {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 30px; }
   .portfolio__button {
     font-family: "Titillium Web";
     text-transform: uppercase;
     font-size: 18px;
     text-decoration: none;
     color: #3c4761;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 10px; }
     .portfolio__button:hover {
       cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 5px; }
+      background-color: rgba(255, 255, 255, 0.5); }
   .portfolio__products-wrap {
     padding: 20px 0; }
   .portfolio__button-wrap {
@@ -304,7 +309,66 @@ body,html{
   box-sizing: border-box;
   padding: 20px; }
   .product-card__image {
-    max-width: 100%; }
+    max-width: 100%;
+    padding-bottom: 30px; }
+  .product-card__name-wrap {
+    text-align: center; }
+  .product-card__name {
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #393939; }
+    .product-card__name:hover {
+      cursor: pointer;
+      color: #48c1e9;
+      text-decoration: underline; }
+
+.testimonials {
+  background-color: #d74680;
+  padding: 120px 0 100px;
+  font-family: 'Titillium Web';
+  color: #f7f3ea; }
+  .testimonials__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6em; }
+  .testimonials__feedbacks-wrap {
+    padding-top: 40px; }
+
+.feedback {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 50px 0 100px;
+  line-height: 1.5em; }
+  .feedback__photo-wrap {
+    float: left;
+    height: 100%;
+    width: 30%; }
+  .feedback__photo {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #878787; }
+  .feedback__text-wrap {
+    float: right;
+    width: 60%;
+    padding-right: 50px; }
+  .feedback__message {
+    font-family: 'Titillium Web Italic';
+    font-size: 21px;
+    line-height: 1.5em; }
+  .feedback__author {
+    font-family: 'Titillium Web Bold';
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    line-height: 1.5em; }
+  .feedback__position {
+    font-family: 'Titillium Web';
+    color: #ffdd99;
+    font-size: 18px; }
 
 .button {
   text-transform: uppercase;
@@ -334,13 +398,6 @@ body,html{
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset; }
 
 @font-face {
-  font-family: 'Font-Name';
-  src: url("../fonts/font-name.eot");
-  src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Titillium Web';
   src: url("../fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
   font-weight: normal;
@@ -355,6 +412,12 @@ body,html{
 @font-face {
   font-family: 'Titillium Web Light';
   src: url("../fonts/Titillium_Web/TitilliumWeb-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Titillium Web Italic';
+  src: url("../fonts/Titillium_Web/TitilliumWeb-Italic.ttf");
   font-weight: normal;
   font-style: normal; }
 

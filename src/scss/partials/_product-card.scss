@@ -6,5 +6,24 @@
   
   &__image {
     max-width: 100%;
+    padding-bottom: 30px;
+  }
+  
+  &__name-wrap {
+    text-align: center;
+  }
+  
+  &__name {
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $black;
+    
+    &:hover {
+      cursor: pointer;
+      color: $link;
+      text-decoration: underline;
+    }
   }
 }

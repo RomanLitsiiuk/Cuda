@@ -47,5 +47,10 @@
   
   &--portfolio {
     @extend .main-heading--team;
+    color: $black;
+  }
+  
+  &--testimonials {
+    @extend  .main-heading--second-section;
   }
 }
